@@ -586,19 +586,24 @@
                 border-radius: 22px;
                 max-width: 330px;
                 min-height: 317px;
+                padding-bottom: 17px;
                 &--img {
                     height: 186px;
                     margin-bottom: 22px;
+                    border-radius: 22px 22px 0 0;
+                    img {
+                        border-radius: 22px 22px 0 0;
+                    }
                 }
                 &--rubric {
                     font-size: 12px;
                     line-height: 14.09px;
-                    margin-bottom: 10px;
+                    margin-bottom: 35px;
                 }
                 &--title {
                     font-size: 16px;
                     line-height: 19px;
-                    margin-bottom: 10px;
+                    margin-bottom: 35px;
                 }
             }
         }
@@ -800,7 +805,7 @@
         }
     }
     .publication {
-        padding: 0 10px 150px 10px;
+        padding: 25px 10px 30px 10px;;
         &__block {
             width: 100%;
             flex-direction: column;
@@ -825,43 +830,13 @@
             &-item {
                 width: 100%;
                 max-width: 100%;
-            }
+            }           
         }
-        &__elements {
-            &-item {
-                background-color: #cbd3d8;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                max-width: 377px;
-                column-gap: 20px;
-                border-bottom: 2px solid $colorText;
-                border-radius: 0;
-                &--container {
-                    margin-left: 0;
-                    max-width: 250px;
-                }
-                &--img {
-                    width: 105px;
-                   height: 105px;
-                    border-radius: 12px;
-                    margin-bottom: 0;
-                    img {
-                        border-radius: 12px;
-                    }
-                }
-                &--rubric {
-                    font-size: 12px;
-                    line-height: 14px;
-                    margin-bottom: 35px;
-                }
-                &--title {
-                    font-size: 16px;
-                    line-height: 19px;
-                    margin-bottom: 35px;
-                }
-            }
-            
+        &__btn {
+            width: 84px;
+            height: 30px;
+            font-size: 11px;
+            line-height: 13px;
         }
     }
 }
@@ -876,8 +851,10 @@
             width: 80px;
             &-name {
                 font-size: 12px;
-            }
-            
+            }            
+        }
+        &__news {
+            top: 100px;
         }
         &__navigation {
             width: 295px;
@@ -1108,6 +1085,7 @@
         padding: 70px 25px 50px 25px;
         height: 1120px;
         position: relative;
+        border-radius: 0;
         &__wrapper {
             flex-wrap: wrap;
             justify-content: center;
@@ -1197,6 +1175,52 @@
             }
         }
     }
+    .publication {
+        padding: 25px 10px 80px 10px;;
+        &__elements {
+            gap: 0;
+            &-item {
+                background-color: #cbd3d8;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                max-width: 377px;
+                column-gap: 20px;
+                border-bottom: 2px solid $colorText;
+                border-radius: 0;
+                &--container {
+                    margin-left: 0;
+                    max-width: 250px;
+                }
+                &--img {
+                    width: 105px;
+                    height: 105px;
+                    border-radius: 12px;
+                    margin-bottom: 10px;
+                    img {
+                        border-radius: 12px;
+                    }
+                }
+                &--rubric {
+                    font-size: 12px;
+                    line-height: 14px;
+                    margin-bottom: 35px;
+                }
+                &--title {
+                    font-size: 16px;
+                    line-height: 19px;
+                    margin-bottom: 35px;
+                }
+            }
+            
+        }
+        &__btn {
+            width: 250px;
+            height: 44px;
+            font-size: 16px;
+            line-height: 19px;
+        }
+    }
 }
 @media(max-width: 430px) {
     .menuBack {
@@ -1277,8 +1301,6 @@
     .allProduct {
         padding: 10px 10px 20px 10px;
         &__item {
-            // width: 155px;
-            // height: 270px;
             &-heart {
                 right: 10px;
             }
