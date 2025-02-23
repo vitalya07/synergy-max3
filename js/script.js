@@ -24,9 +24,9 @@ informationItem.forEach((item, index)=> {
 })
 //sliders
 new Splide('#slider1', {
-    perPage: 5,
+    perPage: 4,
     rewind : true,
-    padding: '5rem',
+    padding: '1rem',
     pagination: false,
     focus  : 'center',
     breakpoints: {
@@ -34,33 +34,31 @@ new Splide('#slider1', {
 			perPage: 4,
 		},
         1400: {
-			perPage: 5,
-            padding: '3rem',
+			perPage: 3,
+            padding: '4rem',
 		},
         993: {
-			perPage: 4,
-            padding: '3rem',
+			perPage: 2,
+            padding: '8rem',
             arrows: false,
 		},
         800: {
-			perPage: 3,
-            padding: '5rem',
+			perPage: 2,
+            padding: '1rem',
 		},
         660: {
-			perPage: 3,
-            padding: '2rem',
+			perPage: 1,
+            padding: '8rem',
 		},
-        550: {
-			perPage: 2,   
+        550: {   
             padding: '5rem',         
 		},
-        450: {
-			perPage: 2,   
-            padding: '1rem',         
+        450: { 
+            padding: '3rem',         
 		},
         370: {
 			perPage: 1,   
-            padding: '5rem',         
+            padding: '1rem',         
 		},
     }
     
@@ -108,47 +106,46 @@ new Splide('#slider2', {
     
 }).mount(); 
 new Splide('#slider3', {
-    perPage: 4,
+    perPage: 5,
     rewind : true,
+    padding: '5rem',
     pagination: false,
-    focus: 'center',
+    focus  : 'center',
     breakpoints: {
 		1750: {
 			perPage: 4,
 		},
         1400: {
-			perPage: 3,
-            padding: '1rem',
-		},
-        1200: {
-            arrows: false
+			perPage: 5,
+            padding: '3rem',
 		},
         993: {
-			perPage: 2,
-            padding: '10rem',
+			perPage: 4,
+            padding: '3rem',
+            arrows: false,
 		},
         800: {
-			perPage: 2,
-            padding: '2rem',
-		},
-        800: {
-            padding: '1rem',
+			perPage: 3,
+            padding: '5rem',
 		},
         660: {
-			perPage: 1,
-            padding: '10rem',
+			perPage: 3,
+            padding: '2rem',
 		},
-        550: { 
+        550: {
+			perPage: 2,   
             padding: '5rem',         
 		},
         450: {
-            padding: '3rem',         
+			perPage: 2,   
+            padding: '1rem',         
 		},
         370: {
 			perPage: 1,   
-            padding: '1rem',         
+            padding: '5rem',         
 		},
     }
     
 }).mount(); 
+
 

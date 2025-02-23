@@ -132,6 +132,12 @@
                 right: 2%;
             }
         }
+    }   
+    .category {
+        &__box {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
     }
     .footer {
         padding: 65px 100px 50px 90px;
@@ -629,6 +635,19 @@
             }
         }
     }
+    .category {
+        &__box {
+            max-width: 715px;
+            &-title {
+                font-size: 32px;
+                line-height: 38px;
+            }
+            &-img {
+                width: 282px;
+                height: 119px;
+            }
+        }
+    }
     .footer {
         padding: 65px 25px 50px 50px;
         height: 1000px;
@@ -837,6 +856,36 @@
             height: 30px;
             font-size: 11px;
             line-height: 13px;
+        }
+    }
+    .newsPageMain {
+        max-width: 768px;
+        &__title {
+            font-size: 28px;
+            line-height: 33px;
+            margin-bottom: 20px;
+        }
+        &__subtitle {
+            font-size: 16px;
+            line-height: 19px;
+            margin-bottom: 20px;
+            max-width: 576px;
+        }
+    }
+    .newsPageDescr {
+        max-width: 576px;
+        &__title {
+            font-size: 22px;
+            line-height: 26px;
+        }
+        &__descr {
+            font-size: 14px;
+            line-height: 16px;
+        }
+        &__mores {
+            flex-direction: column;
+            gap: 20px;
+            margin-bottom: 0;
         }
     }
 }
@@ -1219,6 +1268,41 @@
             height: 44px;
             font-size: 16px;
             line-height: 19px;
+        }
+    }
+    .newsPageMain {
+        &__title {
+            max-width: 364px;
+            margin: 0 auto;
+            display: block;
+            margin-bottom: 20px;
+        }
+        &__subtitle {
+            max-width: 364px;
+            margin: 0 auto;
+            display: block;
+            margin-bottom: 20px;
+        }
+    }
+    .newsPageDescr {
+        max-width: 376px;
+        &__image {
+            height: 376px;
+        }
+    }
+    .category {
+        &__box {
+            max-width: 378px;
+            padding: 0 30px;
+            margin-bottom: 60px;
+            &-title {
+                font-size: 32px;
+                line-height: 38px;
+            }
+            &-img {
+                width: 340px;
+                height: 80px;
+            }
         }
     }
 }
